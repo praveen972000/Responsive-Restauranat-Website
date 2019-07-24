@@ -1,0 +1,373 @@
+/* red-color : #d3325f */
+/* white-color :#c9c1ac */
+
+#body {
+  font-family: "Mr Dafoe", cursive;
+  color: #c9c1ac;
+  background: url(../img/body-bck-grnd-chain-close-up-glass-1036857.jpg)
+    center/cover fixed no-repeat;
+}
+.info {
+  background: #c9c1ac;
+}
+.primary-color {
+  color: #d3325f;
+}
+
+.info h2 {
+  word-spacing: 0.6rem;
+}
+
+.info a {
+  transition: color 2s ease-in-out;
+}
+
+.info a:hover {
+  color: #242424;
+}
+
+/* header */
+#header {
+  min-height: calc(100vh - 94px);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/avocado-cuisine-delicious-684965.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.height-90 {
+  min-height: calc(100vh - 94px);
+}
+
+.banner h1 {
+  border-top: 6px dotted #c9c1ac;
+  border-bottom: 6px dotted #c9c1ac;
+  animation: fromLeft;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main-btn {
+  color: #d3325f;
+  font-size: 2rem;
+  border: 2px solid #d3325f;
+  transition: all 1s ease-in-out;
+  padding: 0 0.4rem;
+}
+
+.main-btn:hover {
+  color: #242424;
+  border: 2px solid #c9c1ac;
+  background: #c9c1ac;
+}
+.sushi-btn {
+  animation: fromRight;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+@keyframes fromRight {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.header-link {
+  display: inline-block;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  background: #c9c1ac;
+  border-end-end-radius: 22%;
+  transition: all 2s ease;
+  animation: fromBottom;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.header-link:hover {
+  color: #c9c1ac;
+}
+@keyframes fromBottom {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+/* navbar */
+.navbar {
+  background: #c9c1ac;
+  padding: 20px;
+  transition: all 1s ease;
+}
+.navbar-background {
+  padding: 5px 20px;
+}
+.navbar-brand {
+  font-size: 20px;
+}
+.navbar-brand:hover {
+  color: #242424;
+  transition: all 1s ease;
+}
+.nav-link {
+  columns: #242424;
+  text-decoration: none;
+  transition: all 1s ease;
+  font-size: 23px;
+}
+.nav-link:hover {
+  color: #d3325f;
+}
+.nav-btn {
+  background: transparent;
+  color: #d3325f;
+  border: 2px solid #d3325f;
+  border-radius: 5%;
+  font-size: 23px;
+  transition: all 2s ease;
+}
+.nav-btn:hover {
+  color: #242424;
+  border: 2px solid #242424;
+  transform: rotate(10deg);
+}
+.toggler-btn {
+  border: 2px solid #d3325f;
+  padding: 5px;
+  transition: 2s all ease-in;
+}
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background: #d3325f;
+  transition: all 0.6s ease;
+}
+.change .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -8px);
+}
+
+/* menu-items */
+.item-container {
+  position: relative;
+  /* for the link */
+  overflow: hiddden;
+  background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  transition: all 2s ease;
+}
+
+.img-item {
+  transition: all 2s ease;
+}
+.item-container:hover .img-item {
+  transform: scale(1.15); /* .img-item class will get 1.2 times */
+  opacity: 0.5;
+}
+.item-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d3325f;
+  font-size: 2rem;
+  border-top: 3px bottom #d3325f;
+  border-bottom: 3px bottom #d3325f;
+  transition: 2s all ease;
+  opacity: 0;
+}
+.item-container:hover .item-link {
+  opacity: 1;
+}
+.item-link:hover {
+  color: #c9c1ac;
+  border: 3px solid #c9c1ac;
+  background: #c9c1ac;
+  color: #242424;
+}
+.item-container:hover {
+  outline: 10px solid #d3325f;
+  /* outline-offset: 0.99rem; */
+  outline-width: 0.1cm;
+}
+
+/* menu section */
+#menu {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../img/body-bck-grnd-chain-close-up-glass-1036857.jpg) center/cover
+      fixed no-repeat;
+}
+.special {
+  border: 3px solid #d3325f;
+  position: relative;
+}
+.special-text {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  background: #d3325f;
+  padding: 0 0.4rem;
+}
+/* end-of-menu-section */
+
+/* about */
+.about-pictures {
+  position: relative;
+}
+.about-image {
+  position: absolute;
+  width: 150px;
+  transition: all 2s ease;
+  opacity: 0.9;
+}
+.img-1 {
+  left: 0;
+  top: 0;
+}
+.img-2 {
+  left: 20%;
+  top: 20%;
+  z-index: 10;
+}
+.img-3 {
+  left: 40%;
+  top: 45%;
+  z-index: 20;
+}
+.img-4 {
+  left: 40%;
+  top: 0%;
+}
+.img-5 {
+  left: 0%;
+  top: 45%;
+}
+
+.about-image:hover {
+  outline: 10px solid #d3325f;
+  outline-offset: 0.8rem;
+  /* outline-width: 0.1cm; */
+  transform: scale(1.5) rotate(20deg);
+  z-index: 30;
+  opacity: 1;
+}
+.about-pictures:hover .about-image:not(:hover) {
+  /* .about-image not to hover*/
+  opacity: 0.5;
+}
+
+/* review */
+.review-img {
+  width: 130px;
+  max-height: 130px;
+}
+.review-item {
+  background: rgba(255, 255, 255, 0.7);
+  clip-path: polygon(5% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+/* team */
+.team-icon a {
+  color: #3b5998;
+  transition: all 2s ease-in-out;
+}
+.team-icon a:hover {
+  color: #242424;
+  transform: translateY(-5px);
+}
+.card-img-top {
+  height: 400px;
+  border: solid 3.3px #d3325f;
+}
+
+/* contact */
+.height-60 {
+  min-height: 60vh;
+}
+#contact .card {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 2s ease;
+}
+#contact .card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+#contact .card-header {
+  color: #d3325f;
+}
+#contact .input-group-text {
+  background: #d3325f;
+  border-color: #d3325f;
+  border: #242424;
+}
+#contact .card input {
+  color: #606060;
+}
+#contact .card input ::placeholder {
+  color: #606060;
+}
+#contact-btn {
+  color: #d3325f;
+  border-color: #d3325f;
+  background: transparent;
+  transition: all 2s ease-in-out;
+}
+#contact-btn:hover {
+  background: #c9c1ac;
+  color: #d3325f;
+  border-color: #c9c1ac;
+}
+
+/* footer */
+#back-to-top {
+  background: #c9c1ac;
+  border-radius: 10px;
+  display: inline-block;
+}
+.scrollTop {
+  position: fixed;
+  bottom: 79px;
+  right: 11px;
+}
